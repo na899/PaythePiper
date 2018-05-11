@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/ma"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAID AMOUNT"
+        android:textColor="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:width="180dp"
+        android:height="50dp"
+        android:paddingTop="16sp"
+        android:paddingLeft="32dp"
+        android:background="@color/colorPrimaryDark"
+        />
+
+
+    <TextView
+        android:id="@+id/title_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOAL"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:width="180dp"
+        android:height="50dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="32dp"
+        android:background="@color/colorPrimaryDark"
+        />
+
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_goal"
+        android:layout_alignParentRight="true"
+        android:width="180dp"
+        android:height="75dp"
+        android:paddingTop="16dp"
+        android:paddingRight="32dp"
+        android:text="Click SET GOAL to set the goal."/>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/title_Status"
+        android:width="180dp"
+        android:height="75dp"
+        android:paddingTop="16dp"
+         android:paddingLeft="32dp"
+        />
+    <Button
+          android:id="@+id/one"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="₹1"
+        android:textAlignment="center"
+          android:layout_below="@+id/status"
+          android:width="180dp"
+          android:height="50dp"
+          android:paddingTop="16dp"
+          android:paddingLeft="32dp"
+          android:onClick="addOne"
+          />
+    <Button
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "           ₹2"
+        android:textAlignment="center"
+        android:layout_below="@+id/one"
+        android:width="180dp"
+        android:height="50dp"
+        android:paddingTop="16dp"
+        android:paddingRight="32dp"
+        android:onClick="addTwo"
+        />
+    <Button
+        android:id="@+id/five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="₹5"
+        android:textAlignment="center"
+        android:layout_below="@+id/two"
+         android:paddingTop="16dp"
+        android:paddingLeft="32dp"
+        android:onClick="addFive"
+        />
+    <Button
+        android:id="@+id/ten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="₹10"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/five"
+        android:width="180dp"
+        android:height="50dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="32dp"
+        android:onClick="addTen"
+        />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/setGoal"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:text="RESET"
+        android:onClick="reset"/>
+
+    <Button
+        android:id="@+id/setGoal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+          android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:text="SET GOAL"
+        android:onClick="setgoal" />
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goal achived. Click SET GOAL to try again!"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_above="@id/reset"
+         android:width="180dp"
+        android:height="50dp"
+        android:visibility="invisible"
+        android:paddingTop="16dp"
+        android:paddingLeft="32dp"
+        android:background="#000056"
+        />
+
+</RelativeLayout>
